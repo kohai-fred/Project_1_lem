@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet 1</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" size="16x16" href="assets/img/logo.png" />
+    <!-- Icone library  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <!-- API Swiper for the slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Our css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_top-bg">
+        <article class="header_top container_big">
+          <section class="header_top-left">
+            <section class="header_top-logo">
+              <a href=""><img src="assets/img/logo.png" alt="Logo du projet 1" /></a>
+            </section>
+            <section class="header_top-social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+            </section>
+            <section class="header_top-nav">
+              <nav>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="#article">Articles</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
+            </section>
+          </section>
+          <section class="header_top-right">
+            <div class="header_top-search">
+              <input type="search" name="search" id="search" placeholder="Rechercher..." autocomplete="off" />
+              <button type="button" data-name="js_btn-search" data-btn="search">
+                <i class="fas fa-search" data-btn="search"></i>
+              </button>
+            </div>
+            <div class="header_top-menu">
+              <button type="button" class="burger">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- This section open when when we typing in search -->
+            <section class="header_top-result">
+              <div id="result"></div>
+            </section>
+          </section>
+        </article>
+      </div>
+    </header>
+
+    <main>
+      <article class="container about">
+        <section class="about_avatar">
+          <img src="assets/img/addyosmani.png" alt="Avatar de addyosmani" />
+          <p class="name">addy osmani</p>
+        </section>
+        <section class="about_content">
+          <p class="name">addy osmani</p>
+          <p>
+            Staff Engineer at Google. Working with the Chrome team • Creator of <br />
+            TodoMVC, Yeoman, Material Design Lite, Web Starter Kit • Passionate about web tooling
+          </p>
+        </section>
+      </article>
+      <article class="article" id="pay-for-read" id="article">
+        <div class="container">
+          <h1>Accessible UI Components For The Web</h1>
+          <blockquote>“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.” - Tim Berners-Lee</blockquote>
+        </div>
+        <section class="banner">
+          <div class="container_big">
+            <img src="assets/img/banner.png" alt="Bannière avec une image représentant des outils" />
+          </div>
+        </section>
+        <div class="container">
+          <p>
+            To be <span class="bold">accessible</span>, UI components need to work across multiple devices with varying screen-sizes and different kinds of input. Moreover, components should be usable
+            by the broadest group of users, including those with disabilities.
+          </p>
+        </div>
+        <section class="slider container_big">
+          <div id="custom-controls">
+            <i class="fa fa-chevron-left left"></i>
+            <i class="fa fa-chevron-right right"></i>
+          </div>
+          <div class="container">
+            <div id="slider">
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/OBfLvqA_E4A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Offline Support, Totally Tooling Tips (S3, Ep1)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/QhUzmR8eZAo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Instant Loading with the App Shell Model, Totally Tooling Tips (S3, E2)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/Sftbg45nQcQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Push Notifications: Totally Tooling Tips (S3, E3)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/yQhFmPExcbs"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Web App Manifest: Totally Tooling Tips (S3, E4)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/M482RhQ8i1Q"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>DevTools Device Mode: Totally Tooling Tips (S3, E5)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/IIRj8DftkqE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Service Worker Libraries, Totally Tooling Tips (S3, E6)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/YEbtvKPvTYE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>More DevTools Tips, Totally Tooling Tips (S3, E7)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/pBJZsp5LsOE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Accessibility, Totally Tooling Tips (S3, E8)</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/wFwogd4CdwY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <figcaption>Key Moments In Web Page Loading, Totally Tooling Tips (S3, E9)</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <p class="bold">When designing for accessibility, there are four key areas of disability to consider: visual, hearing, mobility and cognition.</p>
+          <p><span class="bold">Visual issues</span> can range from an inability to distinguish colors to no vision at all.</p>
+          <ul>
+            <li>
+              Ensure a minimum
+              <a href="www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">contrast ratio threshold</a>
+              is met for text content.
+            </li>
+            <li>
+              Avoid communicating information
+              <a href="www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-without-color">using solely color</a>
+              and ensure that all text is
+              <a href="www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">resizable</a>.
+            </li>
+            <li>
+              Ensure all user interface components can be used with assistive technologies such as screen readers, magnifiers and braille displays. This entails ensuring that UI components are marked
+              up such that accessibility APIs can programmatically determine the role, state, value and title of any element.
+            </li>
+          </ul>
+          <p><span class="bold">Hearing issues</span> mean a user may have issues hearing sound emitted from a page.</p>
+          <ul>
+            <li>Make the content understandable using <a href="www.w3.org/TR/WCAG20/#media-equiv-av-only-alt">text alternatives</a> for all content that is not strictly text.</li>
+            <li id="start-hidding">
+              Ensure you test that your UI components are still functional <a href="www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-understanding">without sound</a>.
+            </li>
+          </ul>
+          <p><span class="bold">Mobility issues</span> can include the inability to operate a mouse, a keyboard or touch-screen.</p>
+          <ul>
+            <li>
+              Make the content of your UI components <a href="https://www.w3.org/TR/wai-aria-practices/#keyboard">functionally accessible from a keyboard</a> for any actions one would otherwise use a
+              mouse for.
+            </li>
+            <li>
+              Ensure UI components are correctly marked up for assistive technologies; these users may use technologies such as voice control software and physical switch controls, which tend to use
+              the same APIs as other assistive technologies like screen readers.
+            </li>
+          </ul>
+          <p><span class="bold">Cognitive issues</span> mean a user may require assistive technologies to help them with reading text, so it’s important to ensure text alternatives exist.</p>
+          <ul>
+            <li>Avoid a visual presentation that is <a href="www.w3.org/TR/WCAG20/#time-limits">repetitive</a> or flashing as this can cause some users issues.</li>
+            <li>Avoid interactions that are timing-based.</li>
+          </ul>
+          <p>This may seem like a lot of bases to cover, but we’ll walk through the process for assessing and then improving the accessibility of your UI component.</p>
+        </div>
+        <section class="article_btn-readme">
+          <button type="button">Readme more for $2,00/month</button>
+        </section>
+        <!-- ID: "end-hidding" is used for the calculation to open with -->
+        <span id="end-hidding"></span>
+      </article>
+      <!-- I put the id 'pricing' here because if it is on the section "article_btn-readme", it goes up -->
+      <span id="pricing"></span>
+      <article class="recommandations">
+        <div class="container">
+          <h2>More recommandations</h2>
+          <section class="card_wrapper">
+            <div class="card">
+              <a href="">
+                <header>
+                  <img src="assets/img/article1.png" alt="Image de l'article 1 d'Addy Osmani" />
+                </header>
+                <main>
+                  <p class="card_small-title">More from Addy Osmany</p>
+                  <div class="card_big-title">
+                    <p title="Offline Storage for Progressive Web Apps">Offline Storage for Progressive Web Apps</p>
+                  </div>
+                  <section class="card_about">
+                    <img src="assets/img/addyosmani-small.png" alt="Avatar d'Addy Osmani" />
+                    <div>
+                      <p class="name">Addy Osmani</p>
+                      <p class="read-time">6 minutes read</p>
+                    </div>
+                  </section>
+                </main>
+              </a>
+            </div>
+            <div class="card">
+              <a href="">
+                <header>
+                  <img src="assets/img/article2.png" alt="Image de l'article 2 de Carolyn Herman" />
+                </header>
+                <main>
+                  <p class="card_small-title">Also tagged Accessibility</p>
+                  <div class="card_big-title">
+                    <p title="Color My World: The Science of Color in UX">Color My World: The Science of Color in UX</p>
+                  </div>
+                  <section class="card_about">
+                    <img src="assets/img/carolynherman-small.png" alt="Avatar de Carolyn Herman" />
+                    <div>
+                      <p class="name">Carolyn Herman</p>
+                      <p class="read-time">3 minutes read</p>
+                    </div>
+                  </section>
+                </main>
+              </a>
+            </div>
+            <div class="card">
+              <a href="">
+                <header>
+                  <img src="assets/img/article3.png" alt="Image de l'article 3 de Corey Floyd" />
+                </header>
+                <main>
+                  <p class="card_small-title">Also tagged Accessibility</p>
+                  <div class="card_big-title">
+                    <p title="Implementing Accessibility for a Custom Control in the...">Implementing Accessibility for a Custom Control in the...</p>
+                  </div>
+                  <section class="card_about">
+                    <img src="assets/img/coreyfloyd-small.png" alt="Avatar de Corey Floyd" />
+                    <div>
+                      <p class="name">Corey Floyd</p>
+                      <p class="read-time">6 minutes read</p>
+                    </div>
+                  </section>
+                </main>
+              </a>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- Backdrop for mobil like menu -->
+      <article class="backdrop js_backdrop">
+        <section class="backdrop_content">
+          <section class="backdrop_content-header">
+            <i class="fas fa-times"></i>
+          </section>
+          <section class="backdrop_content-body"></section>
+          <section class="backdrop_content-footer"></section>
+        </section>
+      </article>
+    </main>
+
+    <footer></footer>
+    <!-- API Swiper for the slider -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
