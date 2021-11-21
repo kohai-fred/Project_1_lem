@@ -15,6 +15,7 @@
 _________________________________ */
 html {
   font-family: var(--font-family);
+  font-family: "Lato", sans-serif;
 }
 a {
   color: black;
@@ -28,6 +29,7 @@ a {
 _________________________________ */
 header .header_top-bg {
   background-color: var(--primary);
+  background-color: #e55e5e;
 }
 /*__________HEADER TOP________ */
 .header_top {
@@ -88,9 +90,11 @@ header .header_top-bg {
 }
 .header_top-social .fa-twitter {
   color: var(--color-twitter);
+  color: #00acee;
 }
 .header_top-social .fa-facebook-square {
   color: var(--color-facebook);
+  color: #3b5998;
 }
 
 /*Right */
@@ -173,12 +177,16 @@ header .header_top-bg {
 }
 .header_top-result #result {
   color: var(--color-light);
+  color: #606060;
   opacity: 0;
   padding: 5px 10px;
   border: 1px solid var(--primary);
+  border-color: #e55e5e;
   border-radius: 3px;
   -webkit-box-shadow: var(--drop-shadow);
   box-shadow: var(--drop-shadow);
+  -webkit-box-shadow: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
+  box-shadow: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -195,6 +203,7 @@ header .header_top-bg {
 }
 .backdrop_nav-menu a:hover {
   color: var(--primary);
+  color: #e55e5e;
 }
 .backdrop_content-footer .header_top-social {
   display: -webkit-box;
@@ -348,6 +357,7 @@ _________________________________ */
   font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: var(--color-light);
+  color: #606060;
   font-weight: 300;
 }
 .about_content p br {
@@ -389,12 +399,15 @@ _________________________________ */
   position: relative;
   -webkit-filter: var(--drop-shadow);
   filter: var(--drop-shadow);
+  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
+  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
 }
 .article .bold {
   font-weight: 600;
 }
 .article a {
   color: var(--color-lighter);
+  color: #7c7c7c;
   opacity: 0.6;
   text-decoration: underline;
   -webkit-transition: 0.3s ease-in-out;
@@ -403,6 +416,7 @@ _________________________________ */
 }
 .article a:hover {
   color: var(--primary);
+  color: #e55e5e;
   opacity: 1;
 }
 .article h1 {
@@ -444,6 +458,7 @@ _________________________________ */
 /* Banner */
 .article .banner {
   background-color: var(--color-banner);
+  background-color: #6bb4a1;
   margin: calc(35px + (60 - 35) * ((100vw - 300px) / (1600 - 300))) 0;
 }
 /* Slider */
@@ -466,6 +481,7 @@ _________________________________ */
 .slider #custom-controls i {
   font-size: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: var(--color-lighter);
+  color: #7c7c7c;
 }
 .slider #custom-controls .left {
   left: 20px;
@@ -484,6 +500,7 @@ _________________________________ */
 }
 .slider .tns-nav-active {
   background-color: var(--primary);
+  background-color: #e55e5e;
 }
 .slider figure.wrapper {
   display: -webkit-box;
@@ -509,6 +526,7 @@ _________________________________ */
   text-align: center;
   margin: 20px;
   color: var(--color-lighter);
+  color: #7c7c7c;
   opacity: 0.6;
   font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -537,9 +555,11 @@ _________________________________ */
 }
 .article_btn-readme button {
   background-color: var(--primary);
+  background-color: #e55e5e;
   color: white;
   padding: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300))) calc(12px + (18 -12) * ((100vw - 300px) / (1600 - 300)));
   border: 1px solid var(--primary);
+  border-color: #e55e5e;
   border-radius: 3px;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -551,6 +571,7 @@ _________________________________ */
   transform: scale(1.05);
   background-color: #fff;
   color: var(--primary);
+  color: #e55e5e;
 }
 @media screen and (min-width: 768px) {
   .article blockquote {
@@ -584,6 +605,8 @@ _________________________________ */
   margin: 0 auto 20px;
   -webkit-filter: var(--drop-shadow);
   filter: var(--drop-shadow);
+  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
+  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.13));
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -601,6 +624,7 @@ _________________________________ */
 .recommandations .card_small-title {
   font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: var(--color-lighter);
+  color: #7c7c7c;
   opacity: 0.6;
 }
 .recommandations .card_big-title {
@@ -631,6 +655,7 @@ _________________________________ */
 }
 .recommandations .card_about .read-time {
   color: var(--color-lighter);
+  color: #7c7c7c;
 }
 @media screen and (min-width: 768px) {
   .recommandations .card_wrapper {
